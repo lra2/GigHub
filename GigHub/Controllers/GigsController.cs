@@ -80,6 +80,7 @@ namespace GigHub.Controllers
                 Heading = "Gigs I'm Attending",
                 Attendances = _unitOfWork.Attendances.GetFutureAttendances(userId).ToLookup(a => a.GigId)
             };
+
             return View("Gigs", viewModel);
         }
 
