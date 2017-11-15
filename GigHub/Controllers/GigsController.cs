@@ -10,6 +10,7 @@ namespace GigHub.Controllers
     public class GigsController : Controller
     {
         // Added feature 1.1 to GigsController.cs
+        // Change on feature 1.2
         private readonly IUnitOfWork _unitOfWork;
 
         public GigsController(IUnitOfWork unitOfWork)
